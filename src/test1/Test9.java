@@ -39,7 +39,7 @@ public class Test9 {
 
 	public static void main(String[] args) {
 		Test9 Test9 = new Test9();
-		Test9.Set t;
+		Set t;
 		ArrayList<Set> A = new ArrayList<Set>();             //初始化输入数组A
 		t = Test9.new Set(4, 8);
 		A.add(t);
