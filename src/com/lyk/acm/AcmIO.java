@@ -10,7 +10,7 @@ import java.math.*;
 public class AcmIO {
 	public static void main(String [] args) throws IOException {
 		//输入
-//		Scanner1();
+		Scanner1();
 //		Scanner2();
 //		Read();
 //		Buffer();
@@ -19,7 +19,7 @@ public class AcmIO {
 //		format();
 
 //		bigNumber();
-		string();
+//		string();
 	}
 	public static void print() {
 //		输出一般可以直接用 System.out.print() 和 System.out.println()，前者不输出换行，而后者输出。
