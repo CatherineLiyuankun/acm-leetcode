@@ -1,6 +1,13 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        String string = "123";
+        System.out.println(string);
+        chage(string);
+        System.out.println(string);
+    }
+
+    public static void chage(String str) {
+        str = "abc";
     }
 }
