@@ -2,6 +2,7 @@ package test.worksApplication;
 
 /**
  * Created by muzilan on 15/10/23.
+ * http://blog.csdn.net/jtlyuan/article/details/7758890 动态规划 棋盘移动
  */
 public class Game {
     public static void main(String[] args) {

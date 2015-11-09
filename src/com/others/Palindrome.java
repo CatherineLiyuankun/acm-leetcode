@@ -18,10 +18,13 @@ public class Palindrome {
      * @return
      */
     public static boolean isPalindromeByCharAtSingle(String s) {
+        if (s == null || s.length() < 1) {
+            return false;
+        }
         //通过对称下标的关系使用一个变量即可判断所有对称位置字符是否相同
-        for(int i=0;i<s.length()/2;i++){
+        for (int i = 0; i < s.length() / 2; i++) {
             //只有当前一半字符串和后一半字符串对应位置相同，那么才是回文，只有有一个对称位置的字符不同就不是回文
-            if(s.charAt(i)!=s.charAt(s.length()-i-1)){
+            if (s.charAt(i) != s.charAt(s.length() - i - 1)) {
                 return false;
             }
         }

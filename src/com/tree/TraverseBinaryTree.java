@@ -4,6 +4,7 @@ import java.util.Stack;
 
 /**
  * Created by muzilan on 15/10/24.
+ * http://blog.csdn.net/clam_clam/article/details/6845399
  */
 public class TraverseBinaryTree {
     protected Node root;
@@ -21,7 +22,8 @@ public class TraverseBinaryTree {
      */
     public static Node init() {
         Node a = new Node('A');
-        Node b = new Node('B', null, a);
+        Node i = new Node('I');
+        Node b = new Node('B', i, a);
         Node c = new Node('C');
         Node d = new Node('D', b, c);
         Node e = new Node('E');
@@ -262,40 +264,40 @@ public class TraverseBinaryTree {
      */
     public static void main(String[] args) {
         TraverseBinaryTree tree = new TraverseBinaryTree(init());
-        System.out.print(" 递归遍历 \n");
-        System.out.print(" Pre-Order:");
-        preorder(tree.getRoot());
-
-        System.out.print(" \n In-Order:");
-        inorder(tree.getRoot());
-
-        System.out.print("\n Post-Order:");
-        postorder(tree.getRoot());
+//        System.out.print(" 递归遍历 \n");
+//        System.out.print(" Pre-Order:");
+//        preorder(tree.getRoot());
+//
+//        System.out.print(" \n In-Order:");
+//        inorder(tree.getRoot());
+//
+//        System.out.print("\n Post-Order:");
+//        postorder(tree.getRoot());
 
         System.out.print(" \n非递归遍历");
-        System.out.print(" \n Pre-Order:");
-        iterativePreorder(tree.getRoot());
+//        System.out.print(" \n Pre-Order:");
+//        iterativePreorder(tree.getRoot());
+//
+//        System.out.print("\n Pre-Order2:");
+//        iterativePreorder2(tree.getRoot());
 
-        System.out.print("\n Pre-Order2:");
-        iterativePreorder2(tree.getRoot());
-
-        System.out.print(" \n In-Order:");
-        iterativeInorder(tree.getRoot());
-
-        System.out.print("\n In-Order2:");
-        iterativeInorder2(tree.getRoot());
-
-        System.out.print("\n Post-Order:");
+//        System.out.print(" \n In-Order:");
+//        iterativeInorder(tree.getRoot());
+//
+//        System.out.print("\n In-Order2:");
+//        iterativeInorder2(tree.getRoot());
+//
+//        System.out.print("\n Post-Order:");
         iterativePostorder(tree.getRoot());
-
-        System.out.print("\n Post-Order2:");
-        iterativePostorder2(tree.getRoot());
-
-        System.out.print("\n Post-Order3:");
-        iterativePostorder3(tree.getRoot());
-
-        System.out.print("\n Post-Order4:");
-        iterativePostorder4(tree.getRoot());
+//
+//        System.out.print("\n Post-Order2:");
+//        iterativePostorder2(tree.getRoot());
+//
+//        System.out.print("\n Post-Order3:");
+//        iterativePostorder3(tree.getRoot());
+//
+//        System.out.print("\n Post-Order4:");
+//        iterativePostorder4(tree.getRoot());
 
 
     }
