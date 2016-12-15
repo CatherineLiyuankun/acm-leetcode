@@ -60,7 +60,6 @@ public class LYKNStairs {
             fibMinus2 = fibMinus1;
             fibMinus1 = fibN;
         }
-
         return fibN;
     }
 
